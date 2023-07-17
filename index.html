@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Form Event</title>
+    <link rel="stylesheet" href="./asset/css/styles.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container my-5">
+      <div class="row justify-content-center my-5">
+        <div class="col-lg-6">
+          <div class="card shadow">
+            <div class="card-header">
+              <h2 class="card-title">Create Account</h2>
+            </div>
+            <div class="card-body">
+              <div class="msg"></div>
+              <form id="userForm" autocomplete="off">
+                <div class="my-3">
+                  <label for="name">Name :</label>
+                  <input type="text" class="form-control" name="name" />
+                </div>
+                <div class="my-3">
+                  <label for="email">Email :</label>
+                  <input type="text" class="form-control" name="email" />
+                </div>
+                <div class="my-3">
+                  <label for="mobile">Mobile :</label>
+                  <input type="text" class="form-control" name="mobile" />
+                </div>
+                <div class="my-3">
+                  <label for="mobile">Profile Photo :</label>
+                  <input
+                    type="file"
+                    id="userPhoto"
+                    class="form-control"
+                    name="photo"
+                  />
+                </div>
+                <div class="my-3">
+                  <label for="mobile">Gallery Photo :</label>
+                  <input
+                    type="file"
+                    id="galleryPhoto"
+                    multiple
+                    class="form-control"
+                    name="photo"
+                  />
+                </div>
+                <div class="my-3">
+                  <button type="submit" class="btn btn-primary">Create</button>
+                  <button type="reset" class="btn btn-warning">Reset</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="card">
+            <div class="card-body">
+              <div class="prf-photo">
+                <h4>Profile Photo :</h4>
+                <div class="profile-photo"></div>
+              </div>
+              <div class="honu-lulu">
+                <h4>Gallery Photo :</h4>
+                <div class="gallery-photo"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./src/data.js"></script>
+    <script src="./src/functions.js"></script>
+    <script src="./src/main.js"></script>
+  </body>
+</html>
