@@ -37,7 +37,7 @@ galPhoto.onchange = (e) => {
   for (let i = 0; i < e.target.files.length; i++) {
     const imgUrl = URL.createObjectURL(e.target.files[i]);
     galleryPhoto.innerHTML += `<img src="${imgUrl}" alt="" style="width:100px; height:100px; margin: 5px;" />
-  `;
+    <button onclick="deletePhoto(${i})" class="alert alert-danger btn-close" data-bs-dismiss="alert"></button>`;
   }
 };
 // Delete Functions
