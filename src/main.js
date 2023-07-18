@@ -40,3 +40,10 @@ galPhoto.onchange = (e) => {
   `;
   }
 };
+// Delete Functions
+function deletePhoto(index) {
+  const images = galleryPhoto.getElementsByTagName("img");
+  if (index >= 0 && index < images.length) {
+    images[index].remove();
+  }
+}
